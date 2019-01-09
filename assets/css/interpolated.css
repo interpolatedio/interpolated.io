@@ -1,0 +1,241 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* { 
+    box-sizing: border-box; 
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.backsplash {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background: url('../img/backsplash.svg') no-repeat top right;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+  height: 33px;
+  margin-top: 6vh;
+  margin-left: 7vw;
+  background: url('../img/logo.svg') no-repeat ;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+      width: 100px;
+     }
+
+}
+
+.hero-title h1 {
+    position: absolute;
+    color: white;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight:300;
+
+    margin-top: 14vh;
+    margin-left: 44vw;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero-title h1 {
+        margin-top: 18vh;
+        margin-left: 30vw;
+        margin-right: 5vw;
+        font-size: 3vh;
+    }
+}
+
+.hero-title-offset {
+    margin-left: 15vw;
+}
+
+.hero-subtitle h2 {
+    position: absolute;
+    color: #EAF2FE;
+    font-family: "Cabin", sans-serif;
+    font-weight: lighter;
+    margin-top: 36vh;
+    margin-left: 24vw;
+    font-size: 4vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-subtitle h2 {
+        margin-top: 32vh;
+        margin-left: 10vw;
+        font-size: 3vh;
+    }
+}
+
+.apply-bar {
+    position: absolute;
+    height: 9vh;
+    width: 38vw;
+    margin-top: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0; 
+    right: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+    .apply-bar {
+        height: 6vh;
+        width: 85vw;
+        margin-top: 45vh;
+        font-size: 70%;
+    }
+}
+
+.apply-bar form {
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    border-radius: 2px;
+    width: 65%;
+}
+
+.apply-bar input[type=email] {
+    height: 100%;
+    font-size: 100%;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+.apply-bar button {
+    display: inline-block;
+    background-color: #36B470;
+    padding: 0;
+    border: 0;
+    border-radius: 2px;
+    height: 100%;
+    font-size: 100%;
+    color: white;
+    width: 33%;
+}
+
+.detail {
+    position: absolute;
+    margin-top: 100vh;
+}
+
+.detail .detail-title {
+    position: relative;
+    margin-top: 25vh;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .detail .detail-title {
+        margin-bottom: 25vh;
+    }
+}
+
+.detail .detail-title h3 {
+    position: relative;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 6vh;
+    font-weight: lighter;
+    color: #0066FF; 
+}
+@media only screen and (max-width: 1000px) {
+    .detail .detail-title h3 {
+        font-size: 4vh;
+    }
+}
+
+.detail .detail-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.detail .detail-column {
+    float: left;
+    width: 33.33%;
+    height: 80vh;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .detail .detail-column {
+        width: 100%;
+    }
+}
+
+.exchange-icon {
+    height: 15vh;
+    background: url('../img/interpolated-exchanges.svg') no-repeat center top;
+    background-size: 15vw 15vh;
+}
+@media only screen and (max-width: 1000px) {
+    .exchange-icon {
+        background-size: 35vw 15vh;
+    }
+}
+
+.automated-icon {
+    height: 15vh;
+    background: url('../img/interpolated-automated.svg') no-repeat center top;
+    background-size: 10vw 15vh;
+}
+@media only screen and (max-width: 1000px) {
+    .automated-icon {
+        background-size: 35vw 15vh;
+    }
+}
+
+.strategies-icon {
+    height: 15vh;
+    background: url('../img/interpolated-strategies.svg') no-repeat center top;
+    background-size: 15vw 15vh;
+}
+@media only screen and (max-width: 1000px) {
+    .strategies-icon {
+        background-size: 35vw 15vh;
+    }
+}
+
+.detail .detail-item-text h4 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 3vh;
+    font-weight: lighter;
+    margin-top: 2vh;
+    color: #1F61C4;
+}
+
+.detail .detail-item-text p {
+    font-family: "Cabin", sans-serif;
+    text-align: left;
+    margin: 0vh 5vh;
+    color: #12105A;
+}
+
+.footer {
+    position: relative;
+    height: 5vh;
+    margin-bottom: 5vh;
+}
+
+.footer-text {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #014C76;
+    font-size: 2vh;
+    font-weight: lighter;
+}
